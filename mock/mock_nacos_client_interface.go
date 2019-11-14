@@ -6,8 +6,8 @@ package mock
 
 import (
 	gomock "github.com/golang/mock/gomock"
-	constant "github.com/nacos-group/nacos-sdk-go/common/constant"
-	http_agent "github.com/nacos-group/nacos-sdk-go/common/http_agent"
+	constant "github.com/swift9/nacos-sdk-go/common/constant"
+	http_agent "github.com/swift9/nacos-sdk-go/common/http_agent"
 	reflect "reflect"
 )
 

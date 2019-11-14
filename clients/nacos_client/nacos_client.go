@@ -2,9 +2,9 @@ package nacos_client
 
 import (
 	"errors"
-	"github.com/nacos-group/nacos-sdk-go/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/common/http_agent"
-	"github.com/nacos-group/nacos-sdk-go/utils"
+	"github.com/swift9/nacos-sdk-go/common/constant"
+	"github.com/swift9/nacos-sdk-go/common/http_agent"
+	"github.com/swift9/nacos-sdk-go/utils"
 	"log"
 	"os"
 	"strconv"
@@ -33,8 +33,13 @@ func (client *NacosClient) SetClientConfig(config constant.ClientConfig) (err er
 		err = errors.New("[client.SetClientConfig] config.TimeoutMs should > 0")
 		return
 	}
-	if config.TimeoutMs >= config.ListenInterval {
-		err = errors.New("[client.SetClientConfig] config.TimeoutMs should < config.ListenInterval")
+	if config.TimeoutMs < config.ListenInterval {
+		err = errors.New("[client.SetClientConfig] config.TimeoutMs should >= config.ListenInterval")
+		return
+	}
+
+	if config.TimeoutMs < config.ListenInterval {
+		err = errors.New("[client.SetClientConfig] config.TimeoutMs should >= config.ListenInterval")
 		return
 	}
 
@@ -43,6 +48,10 @@ func (client *NacosClient) SetClientConfig(config constant.ClientConfig) (err er
 	}
 	if config.ListenInterval < 10*1000 {
 		config.ListenInterval = 10 * 1000
+	}
+
+	if config.TimeoutMs < 15*1000 {
+		config.TimeoutMs = 15 * 1000
 	}
 
 	if config.UpdateThreadNum <= 0 {

@@ -1,7 +1,7 @@
 package config_client
 
 import (
-	"github.com/nacos-group/nacos-sdk-go/vo"
+	"github.com/swift9/nacos-sdk-go/vo"
 )
 
 /**

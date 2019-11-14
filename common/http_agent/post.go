@@ -17,7 +17,7 @@ import (
 
 func post(path string, header http.Header, timeoutMs uint64, params map[string]string) (response *http.Response, err error) {
 	client := http.Client{}
-	client.Timeout = time.Millisecond * time.Duration(timeoutMs)
+	client.Timeout = time.Millisecond * time.Duration(2*timeoutMs)
 	var body string
 	for key, value := range params {
 		if len(value) > 0 {

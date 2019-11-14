@@ -2,7 +2,7 @@ package logger
 
 import (
 	"github.com/lestrrat/go-file-rotatelogs"
-	"github.com/nacos-group/nacos-sdk-go/common/util"
+	"github.com/swift9/nacos-sdk-go/common/util"
 	"log"
 	"os"
 	"path/filepath"

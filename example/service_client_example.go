@@ -2,9 +2,9 @@ package example
 
 import (
 	"fmt"
-	"github.com/nacos-group/nacos-sdk-go/clients/naming_client"
-	"github.com/nacos-group/nacos-sdk-go/utils"
-	"github.com/nacos-group/nacos-sdk-go/vo"
+	"github.com/swift9/nacos-sdk-go/clients/naming_client"
+	"github.com/swift9/nacos-sdk-go/utils"
+	"github.com/swift9/nacos-sdk-go/vo"
 )
 
 func ExampleServiceClient_RegisterServiceInstance(client naming_client.INamingClient, param vo.RegisterInstanceParam) {

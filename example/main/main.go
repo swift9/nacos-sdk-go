@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/nacos-group/nacos-sdk-go/clients"
-	"github.com/nacos-group/nacos-sdk-go/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/example"
-	"github.com/nacos-group/nacos-sdk-go/model"
-	"github.com/nacos-group/nacos-sdk-go/utils"
-	"github.com/nacos-group/nacos-sdk-go/vo"
+	"github.com/swift9/nacos-sdk-go/clients"
+	"github.com/swift9/nacos-sdk-go/common/constant"
+	"github.com/swift9/nacos-sdk-go/example"
+	"github.com/swift9/nacos-sdk-go/model"
+	"github.com/swift9/nacos-sdk-go/utils"
+	"github.com/swift9/nacos-sdk-go/vo"
 	"log"
 	"time"
 )

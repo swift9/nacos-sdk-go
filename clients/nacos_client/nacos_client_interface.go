@@ -1,8 +1,8 @@
 package nacos_client
 
 import (
-	"github.com/nacos-group/nacos-sdk-go/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/common/http_agent"
+	"github.com/swift9/nacos-sdk-go/common/constant"
+	"github.com/swift9/nacos-sdk-go/common/http_agent"
 )
 
 /**

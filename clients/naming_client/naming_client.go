@@ -1,14 +1,14 @@
 package naming_client
 
 import (
-	"github.com/nacos-group/nacos-sdk-go/clients/cache"
-	"github.com/nacos-group/nacos-sdk-go/clients/nacos_client"
-	"github.com/nacos-group/nacos-sdk-go/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/common/logger"
-	"github.com/nacos-group/nacos-sdk-go/model"
-	"github.com/nacos-group/nacos-sdk-go/utils"
-	"github.com/nacos-group/nacos-sdk-go/vo"
 	"github.com/pkg/errors"
+	"github.com/swift9/nacos-sdk-go/clients/cache"
+	"github.com/swift9/nacos-sdk-go/clients/nacos_client"
+	"github.com/swift9/nacos-sdk-go/common/constant"
+	"github.com/swift9/nacos-sdk-go/common/logger"
+	"github.com/swift9/nacos-sdk-go/model"
+	"github.com/swift9/nacos-sdk-go/utils"
+	"github.com/swift9/nacos-sdk-go/vo"
 	"math"
 	"math/rand"
 	"os"

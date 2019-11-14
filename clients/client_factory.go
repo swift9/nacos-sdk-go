@@ -2,11 +2,11 @@ package clients
 
 import (
 	"errors"
-	"github.com/nacos-group/nacos-sdk-go/clients/config_client"
-	"github.com/nacos-group/nacos-sdk-go/clients/nacos_client"
-	"github.com/nacos-group/nacos-sdk-go/clients/naming_client"
-	"github.com/nacos-group/nacos-sdk-go/common/constant"
-	"github.com/nacos-group/nacos-sdk-go/common/http_agent"
+	"github.com/swift9/nacos-sdk-go/clients/config_client"
+	"github.com/swift9/nacos-sdk-go/clients/nacos_client"
+	"github.com/swift9/nacos-sdk-go/clients/naming_client"
+	"github.com/swift9/nacos-sdk-go/common/constant"
+	"github.com/swift9/nacos-sdk-go/common/http_agent"
 )
 
 // 创建配置相关的客户端

@@ -1,8 +1,8 @@
 package naming_client
 
 import (
-	"github.com/nacos-group/nacos-sdk-go/model"
-	"github.com/nacos-group/nacos-sdk-go/vo"
+	"github.com/swift9/nacos-sdk-go/model"
+	"github.com/swift9/nacos-sdk-go/vo"
 )
 
 /**
