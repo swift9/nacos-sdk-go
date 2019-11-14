@@ -1,5 +1,8 @@
 ## nacos-go
-go语言版本的nacos client，支持服务发现和配置管理 fix bug TimeoutMs&ListenInterval 
+go语言版本的nacos client，支持服务发现和配置管理 
+
+### Fix Bug
+- nginx http status 499 变更 TimeoutMs > ListenInterval  
 
 ### 客户端配置
 
